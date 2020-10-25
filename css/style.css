@@ -50,6 +50,7 @@ a:focus {
   color: #333333;
   text-decoration: underline;
 }
+
 a:active {
   color: #a3a3a3;
 }
@@ -77,6 +78,7 @@ a:active {
   text-transform: uppercase;
   border: 1px solid #3E7AA2;
 }
+
 .button.contact:hover {
   background-color: #3E7AA2;
   color: #ffffff;
