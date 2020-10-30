@@ -3,6 +3,50 @@ Colors used:
 Primary Color (Blue): #3E7AA2;
 Secondary Color (Green): #F8F8F8;
 */
+header {
+  background-color: #778899;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+  width: 100%;
+}
+
+footer {
+  background-color: #778899;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  padding: 10px 0;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+
+#hero {
+  background-color: #778899;
+  color: #ffffff;
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-weight: 700;
+  color: #FFFFFF !important
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
@@ -38,11 +82,13 @@ img {
 
 a {
   color: #3E7AA2;
-  text-decoration: none;
+  display: inline-block;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: #a3a3a3;
+  color: #3E7AA2;
+  text-decoration: underline;
 }
 
 a:hover,
@@ -58,7 +104,8 @@ a:active {
 .button {
   display: inline-block;
   background-color: #3E7AA2;
-  color: #ffffff;
+  color: #ffffff !important;
+  text-decoration: none !important;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -68,13 +115,13 @@ a:active {
 
 .button:hover {
   opacity: 0.8;
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #3E7AA2;
+  background-color: #3E7AA2;
+  color: #ffffff;
   text-transform: uppercase;
   border: 1px solid #3E7AA2;
 }
@@ -83,3 +130,27 @@ a:active {
   background-color: #3E7AA2;
   color: #ffffff;
 }
+
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+}
+
+.footercontainer {
+  margin-top: 15px;
+}
+
+.row {
+  margin: 25 px 0;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.p1 {
+  text-align: center;
+}
+
+#hero h1 {
+  text-align: center;
