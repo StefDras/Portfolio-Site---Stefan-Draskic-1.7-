@@ -3,6 +3,11 @@ Colors used:
 Primary Color (Blue): #3E7AA2;
 Secondary Color (Green): #F8F8F8;
 */
+
+* {
+  box-sizing: border-box;
+}
+
 header {
   background-color: #778899;
   text-align: center;
@@ -13,14 +18,14 @@ header {
 }
 
 main {
-  padding-top: 135px;
+  padding-top: 144px;
 }
 
 footer {
   background-color: #778899;
   color: #ffffff;
   text-align: center;
-  padding: 10px 0 0;
+  padding: 2em 0;
   margin-top: 20px;
 }
 
@@ -38,6 +43,7 @@ footer a {
 
 #hero span {
   display: block;
+  font-weight: 300;
 }
 
 nav>ul {
@@ -93,7 +99,6 @@ img {
 a {
   color: #3E7AA2;
   display: inline-block;
-  text-decoration: underline;
 }
 
 a:visited {
@@ -104,7 +109,7 @@ a:visited {
 a:hover,
 a:focus {
   color: #333333;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
@@ -115,7 +120,7 @@ a:active {
   display: inline-block;
   background-color: #3E7AA2;
   color: #ffffff !important;
-  text-decoration: none !important;
+  text-decoration: none;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -125,8 +130,6 @@ a:active {
 
 .button:hover {
   opacity: 0.8;
-  color: #ffffff !important;
-  text-decoration: none;
 }
 
 .button.contact {
@@ -151,7 +154,8 @@ a:active {
 }
 
 .row {
-  margin: 25 px 0;
+  margin: 25px 0;
+  padding: 0 0 25px;
 }
 
 .image01 {
@@ -174,16 +178,29 @@ a:active {
   text-align: center;
 }
 
+.p2 {
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+
 #hero h1 {
   text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 #about_page h3 {
   margin-top: 0;
 }
 
+#berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 @keyframes color-change {
-  0% {fill: #edc655;}
+  0% {fill: #ff0000;}
   50% {fill: #fcffad;}
   100% {fill: #f76414;}
 }
@@ -198,8 +215,8 @@ a:active {
   to {transform: translate(100px, 48px);}
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+.rect4506 {
+  animation: 4s color-change infinite alternate linear;
 }
 
 .cloud-back {
@@ -247,6 +264,7 @@ Medium devices (640px or larger)
 
   [class*="col-"] {
     float: left;
+    padding: 16px;
   }
 }
 
@@ -254,41 +272,13 @@ Medium devices (640px or larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
-  body {
-    font-size: 18px;
-  }
-
-  main {
-    padding-top: 99px;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .col-lg-7 {
-    width: 58, 33%;
+    width: 58.33%;
   }
 
   .col-lg-5 {
-    width: 41, 66%;
-  }
-
-  [class*="col-"] {
-    float: left;
+    width: 41.66%;
   }
 }
 
