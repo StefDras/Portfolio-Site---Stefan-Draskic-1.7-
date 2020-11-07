@@ -145,6 +145,11 @@ a:active {
 }
 
 /* Layout Styling */
+
+.section {
+  padding: 15px;
+}
+
 .container {
   padding: 0 15px;
 }
@@ -176,6 +181,7 @@ a:active {
 
 .p1 {
   text-align: center;
+  padding-bottom: 16px;
 }
 
 .p2 {
@@ -186,7 +192,7 @@ a:active {
 #hero h1 {
   text-align: center;
   padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
 }
 
 #about_page h3 {
@@ -272,6 +278,16 @@ Medium devices (640px or larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+header li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  .container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
   .col-lg-7 {
     width: 58.33%;
