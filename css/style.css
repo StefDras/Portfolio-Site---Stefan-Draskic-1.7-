@@ -221,8 +221,8 @@ a:active {
   to {transform: translate(100px, 48px);}
 }
 
-.rect4506 {
-  animation: 4s color-change infinite alternate linear;
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
