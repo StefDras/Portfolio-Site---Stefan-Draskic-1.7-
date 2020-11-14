@@ -10,15 +10,14 @@ Secondary Color (Green): #F8F8F8;
 
 header {
   background-color: #778899;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
 }
 
 main {
-  padding-top: 144px;
+  padding-top: 81px;
 }
 
 footer {
@@ -49,10 +48,7 @@ footer a {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -61,6 +57,35 @@ nav>ul>li>a {
   text-decoration: none !important;
   font-weight: 700;
   color: #FFFFFF !important
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 body {
@@ -247,6 +272,22 @@ Medium devices (640px or larger)
     float: right;
     margin-top: 4px;
   }
+
+  nav > ul {
+  margin: 1em 0;
+}
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
   body {
     font-size: 18px;
