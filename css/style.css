@@ -3,7 +3,6 @@ Colors used:
 Primary Color (Blue): #3E7AA2;
 Secondary Color (Green): #F8F8F8;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -79,12 +78,15 @@ nav>ul>li>a {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -170,7 +172,6 @@ a:active {
 }
 
 /* Layout Styling */
-
 .section {
   padding: 15px;
 }
@@ -231,19 +232,37 @@ a:active {
 }
 
 @keyframes color-change {
-  0% {fill: #ff0000;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #ff0000;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-front {
@@ -273,21 +292,25 @@ Medium devices (640px or larger)
     margin-top: 4px;
   }
 
-  nav > ul {
-  margin: 1em 0;
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
   nav>ul>li {
     display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0px 0 0;
+  }
 
   body {
     font-size: 18px;
@@ -295,6 +318,7 @@ Medium devices (640px or larger)
 
   h2 {
     text-align: center;
+    padding-top: 20px;
   }
 
   h3 {
@@ -319,11 +343,11 @@ Medium devices (640px or larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  header li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-header li {
-  padding-left: 20px;
-  padding-right: 20px;
-}
   .container {
     padding: 0 15px;
     max-width: 1200px;
