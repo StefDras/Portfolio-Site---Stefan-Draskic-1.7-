@@ -8,7 +8,7 @@ Secondary Color (Green): #F8F8F8;
 }
 
 header {
-  background-color: #778899;
+  background-color: #67788A;
   padding: 10px 0 4px;
   box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
@@ -20,7 +20,7 @@ main {
 }
 
 footer {
-  background-color: #778899;
+  background-color: #67788A;
   color: #ffffff;
   text-align: center;
   padding: 2em 0;
@@ -28,11 +28,11 @@ footer {
 }
 
 footer a {
-  color: #ffffff;
+  background-color: #ffffff;
 }
 
 #hero {
-  background-color: #778899;
+  background-color: #67788A;
   color: #ffffff;
   display: inline-block;
   width: 100%;
